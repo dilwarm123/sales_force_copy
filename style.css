@@ -1,0 +1,524 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(3, 3, 41);
+    z-index: 20;
+
+}
+
+#logo {
+    height: 50px;
+    width: 5px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.texts {
+    display: flex;
+}
+
+.texts:hover {
+    color: rgb(42, 218, 212);
+    cursor: pointer;
+}
+
+#contactDetails {
+    text-align: center;
+    font-weight: normal;
+}
+
+#contactDetails:hover {
+    color: rgb(42, 218, 212);
+    cursor: pointer;
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.icon:hover {
+    background-color: lightblue;
+    color: rgb(42, 218, 212);
+    cursor: pointer;
+}
+
+
+#login {
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+}
+
+#login:hover {
+    background-color: lightblue;
+    color: rgb(42, 218, 212);
+    cursor: pointer;
+}
+
+#try {
+
+    padding: 5px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#try:hover {
+    background-color: rgb(0, 17, 9);
+    cursor: pointer;
+}
+
+#fakeHeader {
+
+    width: 100%;
+    height: 10vh;
+}
+
+#page1 {
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+
+#strip {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(8, 8, 122);
+    color: white;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#strip u {
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    height: 77%;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box1 {
+    height: 90%;
+    width: 47%;
+    background-color: white;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr 1fr;
+}
+
+#box1 h1 {
+
+    font-weight: 600;
+    color: rgb(2, 2, 60);
+    font-size: 60px;
+    margin: 30px 10px;
+}
+
+#box1 p {
+    margin: 10px;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+#btns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#btn1 {
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(24, 181, 233);
+    border-radius: 7px;
+    text-align: center;
+}
+
+#btn1:hover {
+    background-color: darkblue;
+}
+
+#btn2 {
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    color: rgb(4, 45, 158);
+    border: 1px solid rgb(4, 45, 158);
+    text-align: center;
+    border-radius: 7px;
+}
+
+#btn2:hover {
+    background-color: rgb(9, 31, 228);
+    color: white;
+}
+
+#box2 {
+
+    position: relative;
+    height: 80%;
+    width: 47%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #box1,
+    #box2 {
+        width: 94%;
+        min-height: 300px;
+    }
+
+    #box1 h1 {
+        font-size: 30px;
+    }
+
+    #page1,
+    #page2 {
+        height: auto;
+        min-height: 90vh;
+    }
+
+    #page1 {
+        padding-top: 10vh;
+    }
+
+    #footer {
+        padding-top: 100px;
+    }
+
+    #product {
+        padding-top: 170px;
+
+    }
+
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 20vh;
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    #logo {
+        padding-left: 0px;
+    }
+
+    #try {
+        font-size: small;
+    }
+
+    #search {
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    #globe {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    #login {
+        width: 80px;
+    }
+
+    #btns {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #heading {
+        padding-top: 10vh;
+    }
+}
+
+@media (min-width:768px) and (max-width:1575px) {
+    .texts {
+        padding-left: 90px;
+        gap: 10px;
+
+    }
+
+}
+
+#bg-img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#video {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.689);
+    border-radius: 20px;
+
+}
+
+#play {
+    z-index: 4;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgba(34, 40, 38, 0.286);
+    border-radius: 10px;
+}
+
+#play:hover {
+    background-color: rgba(3, 209, 237, 0.292);
+    color: blue;
+}
+
+#heading {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+#heading h1 {
+    font-weight: 600;
+}
+
+
+
+#page2 {
+
+    height: 90%;
+    width: 100%;
+
+
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.cards {
+    margin: 20px;
+    margin-top: 30px;
+    height: 400px;
+    width: 300px;
+    border: 2px red;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.689);
+    border-radius: 20px;
+    position: relative;
+
+    flex: 1 1 200px;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 50%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+
+.icons {
+    top: 25%;
+    left: 35%;
+    font-size: 40px;
+    color: rgb(241, 5, 202);
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.689);
+    display: inline-block;
+    transform: rotateX(-50%);
+}
+
+
+.heading3 {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    padding: 10px;
+    font-size: medium;
+    color: rgb(4, 4, 48);
+}
+
+.card-para {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    font-size: s;
+    padding: 10px;
+    color: rgb(4, 4, 48);
+    text-align: justify;
+
+    flex-grow: 1;
+    /* Pushes the anchor link to the absolute bottom naturally */
+
+}
+
+
+
+.anchor {
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    font-size: medium;
+    color: rgb(4, 4, 48);
+    text-align: justify;
+    text-decoration: underline;
+    bottom: 10px;
+}
+
+
+.anchor:hover {
+    color: aqua;
+}
+
+#card1:hover {
+    background-color: rgb(255, 196, 205);
+
+
+}
+
+#card2:hover {
+    background-color: rgb(244, 196, 255);
+}
+
+#card3:hover {
+    background-color: rgb(196, 255, 213);
+}
+
+#card4:hover {
+    background-color: rgb(196, 197, 255);
+
+}
+
+#icon1 {
+    color: blue;
+}
+
+#icon2 {
+    color: rgb(7, 111, 49);
+}
+
+#icon3 {
+    color: red;
+}
+
+#icon4 {
+    color: salmon;
+}
+
+#icon1:hover {
+    background-color: aqua;
+}
+
+#icon2:hover {
+    background-color: aqua;
+}
+
+#icon3:hover {
+    background-color: aqua;
+}
+
+#icon4:hover {
+    background-color: aqua;
+}
+
+#product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20%;
+}
+
+#product button {
+    height: 40px;
+    width: 200px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 20px;
+}
+
+#product button:hover {
+    background-color: aqua;
+    color: black;
+    border: 1px solid black;
+}
+
+#footer-img {
+    width: 100%;
+    height: 10%;
+    display: block;
+    height: 10vh;
+
+}
